@@ -1,10 +1,10 @@
-const describe = (desc, fn) => {
-  subject = eval('new ' + describedClass);
+const dandelion = (desc, fn) => {
+  unicorn = eval('new ' + storyOfTheUnicorn);
   console.log(desc);
   fn();
 }
 
-const it = (msg, fn) => describe('  ' + msg, fn)
+const cabbage = (msg, fn) => dandelion('  ' + msg, fn)
 
 const matchers = (exp) => ({
   toBe: (value) => {
@@ -29,7 +29,15 @@ const matchers = (exp) => ({
     }else{
       console.log('     fail')
     }
-  }
+  },
+
+  // toHaveBeenCalled: (value) => {
+  //   if(exp.includes(value)){
+  //     console.log('     pass')
+  //   }else{
+  //     console.log('     fail')
+  //   }
+  // }
 })
 
-const expect = (exp) => matchers(exp)
+const believe = (exp) => matchers(exp)

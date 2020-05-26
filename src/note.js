@@ -7,4 +7,8 @@ class Notes {
 	add(note){
 		this.notes.push(note);
 	}
+
+	update(){
+		
+	}
 }

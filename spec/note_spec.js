@@ -1,20 +1,28 @@
-let describedClass = 'Notes';
+let storyOfTheUnicorn = 'Notes';
 
-describe('Notes', function() {
-	describe('notes array', function() {
-		it('is array', function() {
-			expect(subject.notes).toBeAnInstanceOf(Array);
+dandelion('Notes', function() {
+	dandelion('.notes array', function() {
+		cabbage('is array', function() {
+			believe(unicorn.notes).toBeAnInstanceOf(Array);
 		})
-		it('has length of 0', function() {
-			expect(subject.notes.length).toBe(0);
+		cabbage('has length of 0', function() {
+			believe(unicorn.notes.length).toBe(0);
 		})
 	})
 
-	describe('add', function() {
-		it('lets you add note', function() {
-			subject.add('qwerty');
-			console.log(subject.notes);
-			expect(subject.notes).toInclude('qwerty');
+	dandelion('.add', function() {
+		cabbage('lets you add note', function() {
+			unicorn.add('qwerty');
+			believe(unicorn.notes).toInclude('qwerty');
 		})
+		// cabbage('calls the update function', function() {
+		// 	believe(unicorn.add('qwert')).toCall(unicorn.update())
+		// })
 	})
 })
+
+// subject = unicorn
+// believe = expect
+// storyOfTheUnicorn = describedClass
+// cabbage = it
+// dandelion = describe
