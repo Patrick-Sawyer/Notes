@@ -1,32 +1,20 @@
-// describe('adder', () => {
-//   it('adds two numbers', () => {
-//     expect(adder(1, 2)).toBe(3)
-//   })
-//   it('returns a number', () =>{
-//     expect(adder(1, 2)).toBeAnInstanceOf(Number);
-//   })
-// })
+let describedClass = 'Notes';
 
-describe('adder', function() {
-  it('adds two numbers', function() {
-    expect(adder(1, 2)).toBe(3);
-  })
-  it('returns a number', function() {
-    expect(adder(1, 2)).toBeAnInstanceOf(Number);
-  })
+describe('Notes', function() {
+	describe('notes array', function() {
+		it('is array', function() {
+			expect(subject.notes).toBeAnInstanceOf(Array);
+		})
+		it('has length of 0', function() {
+			expect(subject.notes.length).toBe(0);
+		})
+	})
+
+	describe('add', function() {
+		it('lets you add note', function() {
+			subject.add('qwerty');
+			console.log(subject.notes);
+			expect(subject.notes).toInclude('qwerty');
+		})
+	})
 })
-
-
-// describe('array', () => {
-//   it('is an array', () => {
-//     expect(array).toBeAnInstanceOf(Array);
-//   })
-// })
-
-describe('array', function(){
-  it('returns true', function(){
-    expect(array).toBeAnInstanceOf(Array);
-  })
-})
-
-

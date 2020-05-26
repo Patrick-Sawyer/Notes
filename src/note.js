@@ -1,6 +1,10 @@
-function adder(a, b) {
-  return a + b 
+class Notes {
+
+	constructor(){
+		this.notes = [];
+	}
+
+	add(note){
+		this.notes.push(note);
+	}
 }
-
-
-let array = [];
