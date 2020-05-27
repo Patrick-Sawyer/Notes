@@ -1,10 +1,10 @@
-const dandelion = (desc, fn) => {
-  unicorn = eval('new ' + storyOfTheUnicorn);
+const describe = (desc, fn) => {
+  unicorn = eval('new ' + describedClass);
   console.log(desc);
   fn();
 }
 
-const cabbage = (msg, fn) => dandelion('  ' + msg, fn)
+const it = (msg, fn) => describe('  ' + msg, fn)
 
 const matchers = (exp) => ({
   toBe: (value) => {
