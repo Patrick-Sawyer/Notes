@@ -2,10 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-
+    <title>Notes</title>
   </head>
-  <body>
+  <body onload="update(0)">
+  <textarea name="note"></textarea>
+  <button id="add" onclick="notes.add(document.getElementsByName('note')[0].value), update(notes.notes.length -1)">Add</button>
+  <div id="oneNote"></div>
+  <div id="allNotes"></div>
   <script type="text/javascript" src="src/note.js"></script>
+  <script type="text/javascript" src="src/interface.js"></script>
   </body>
 </html>

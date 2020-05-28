@@ -5,8 +5,8 @@ describe('Notes', function() {
 		it('is array', function() {
 			believe(unicorn.notes).toBeAnInstanceOf(Array);
 		})
-		it('has length of 0', function() {
-			believe(unicorn.notes.length).toBe(0);
+		it('has length of 3', function() {
+			believe(unicorn.notes.length).toBe(3);
 		})
 	})
 
@@ -20,7 +20,7 @@ describe('Notes', function() {
   describe('.viewOne', function(){
 		it('lets you view one note in full', function(){
 			unicorn.add('I am the first note....');
-			believe(unicorn.viewOne(0)).toInclude('I am the first note....');
+			believe(unicorn.viewOne(3)).toInclude('I am the first note....');
 		})
   })
 
