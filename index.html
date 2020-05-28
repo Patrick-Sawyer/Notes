@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <center>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
     <title>Notes</title>
+  
   </head>
   <body onload="update(0)">
+  <div class="planet">
+  <header>
+    <h1>NOTES</h1>
+  </header>
   <textarea name="note"></textarea>
-  <button id="add" onclick="notes.add(document.getElementsByName('note')[0].value), update(notes.notes.length -1)">Add</button>
+  <br>
+  <button class="button" id="add" onclick="notes.add(document.getElementsByName('note')[0].value), update(notes.notes.length -1)">Add Note</button>
   <div id="oneNote"></div>
   <div id="allNotes"></div>
+
   <script type="text/javascript" src="src/note.js"></script>
   <script type="text/javascript" src="src/interface.js"></script>
+  </div>
   </body>
+</center>
 </html>
+ 
