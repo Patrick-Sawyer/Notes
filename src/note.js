@@ -2,9 +2,9 @@ class Notes {
 
 	constructor(){
 		this.notes = [
-			'Do washing, make sure to remember to switch the machine on. Do NOT mix colours and whites.', 
 			'Clean the car, buff to a smooth sheen afterwards.',
-			'Finish makers, hopefully get a job otherwise you wasted your money.'
+			'Finish makers, hopefully get a job otherwise you wasted your money.',
+			'Do washing, make sure to remember to switch the machine on. Do NOT mix colours and whites.', 
 		];
 	}
 
