@@ -1,5 +1,5 @@
 const describe = (desc, fn) => {
-  unicorn = eval('new ' + describedClass);
+  subject = eval('new ' + describedClass);
   console.log(desc);
   fn();
 }
@@ -30,14 +30,6 @@ const matchers = (exp) => ({
       console.log('     fail')
     }
   },
-
-  // toHaveBeenCalled: (value) => {
-  //   if(exp.includes(value)){
-  //     console.log('     pass')
-  //   }else{
-  //     console.log('     fail')
-  //   }
-  // }
 })
 
-const believe = (exp) => matchers(exp)
+const expect = (exp) => matchers(exp)
